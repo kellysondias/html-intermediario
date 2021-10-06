@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <h3>Formulário com GET</h3>
+    <form method="GET" action="index.html">
+        <input type="text" name="q" id="hue">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário com POST</h3>
+    <form method="POST" action="index.html">
+        <input type="text" name="cuzaogostoso" id="hue">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário de login no Facebook</h3>
+
+    <form method="GET" action="index.html" enctype="multipart/form-data">
+
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email">
+
+        <input type="password" name="password" id="password" placeholder="Nova senha">
+
+        <label><h4>Data de nascimento</h4></label>
+        <select name="nascimento" id="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="nascimento" id="mes">
+            <option value="Jan">Jan</option>
+            <option value="Fev">Fev</option>
+            <option value="Mar">Mar</option>
+            <option value="Abr">Abr</option>
+            <option value="Mai">Mai</option>
+        </select>
+
+        <select name="nascimento" id="ano">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+        </select>
+
+        <label><h4>Gênero</h4></label>
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino" value="feminino" checked>
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+
+        <label for="personalizado">Personalizado</label>
+        <input type="radio" name="genero" id="personalizado" value="personalizado">
+
+        <br><br>
+
+        <label for="foto"><strong>Foto do perfil</strong>:</label>
+        <input type="file" id="foto">
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
